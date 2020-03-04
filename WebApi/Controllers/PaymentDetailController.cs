@@ -6,7 +6,9 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using WebApi.Models;
-//
+/// <summary>
+/// 
+/// </summary>
 namespace WebApi.Controllers
 {
     [Route("api/[controller]")]
