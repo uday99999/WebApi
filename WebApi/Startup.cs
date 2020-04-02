@@ -27,8 +27,12 @@ namespace WebApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddMvc();
-            
+            services.AddMvc()
+                  .AddJsonOptions(options =>
+                  {
+                      var resolver = options.JsonSerializerOptions.PropertyNameCaseInsensitive = true;
+                      options.JsonSerializerOptions.PropertyNamingPolicy = null;
+                  });
             services.AddDbContext<PaymentDetailContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("DevConnection")));
         }
