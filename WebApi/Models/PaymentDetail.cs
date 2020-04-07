@@ -11,7 +11,7 @@ namespace WebApi.Models
     public class PaymentDetail
     {
         [Key]
-        public int PMID { get; set; }
+        public int PMID { get; set; }//
         [Required]
         [Column(TypeName ="nvarchar(100)")]
         public string CardHolderName { get; set; }
