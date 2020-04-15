@@ -27,6 +27,6 @@ namespace WebApi.Models
         public string CVV { get; set; }
 
         public int cv { get; set; }
-
+        public  int cvvv{get;set;}
     }
 }
