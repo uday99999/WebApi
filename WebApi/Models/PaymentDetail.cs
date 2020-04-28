@@ -26,7 +26,7 @@ namespace WebApi.Models
         [Column(TypeName ="varchar(3)")]
         public string CVV { get; set; }
 
-        public int cv { get; set; }
-        public int n { get; set; }
+        public int cnecwwv { get; set; }
+        
     }
 }
